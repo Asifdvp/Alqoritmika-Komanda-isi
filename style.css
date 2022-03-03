@@ -6,13 +6,10 @@
     box-sizing: border-box;
     font-size: 16px;
 }
-body{
-    margin-top: 10em;
-    background-color: teal;
-    height: 1500px;
-}
+
 /* Herseyin oldugu div */
 .all{
+   
 max-width: 1440px;
 height: 1046px;
 background: #FFFFFF;
@@ -106,9 +103,7 @@ font-size: 18px;
   *{
       font-size: 14px;
   }
-  body{
-      background-color: red;
-  }
+ 
     .all{
         max-width: 834px;
         height: 633px;
@@ -144,7 +139,7 @@ footer{
       display: flex;  
      align-items: center;
      justify-content: start;
-     max-width: 1035px;
+    
   }
   .footer-img img{
   display: none;
@@ -169,8 +164,75 @@ footer{
 
 
 }
-@media  only screen and ( max-width:375px ){
-  body{
-      background-color: green;
+
+
+
+
+/* responsivlik mobile */
+@media  only screen and ( max-width:375px ) {
+    *{
+        font-size: 10px;
+    }
+   
+      .all{
+          max-width: 375px;
+          height: 776px;
+      }
+      main{
+          max-width: 329px;   
+          flex-direction: column;
+      }
+     
+      article  h1{
+          font-size: 26px;
+      }
+      article p{
+          width: 329.47px;
+           
+  font-size: 12px;
+      }
+      aside{
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 1em;
+      }
+      .photo-div img{
+        width: 146.32px;
+        height: 146.78px;
+      }
+      .ellipsis{
+        width: 170.55px;
+        height: 27.49px;
+          top:131px ;        
+      }
+  /* Footer */
+  footer{
+    max-width: 329px;   
+    }
+    .footer-all{
+        margin-top: 6em;
+        display: flex;  
+       align-items: center;
+       justify-content: start;   
+    }
+    .footer-img img{
+    display: none;
+    }
+    .footer-content{
+        width: 226px;
+      flex-wrap: wrap;
+      height: 106px;
+      align-content: space-between;
+      justify-content: space-between;
+      
+    }
+    .footer-card{
+        max-width: 97px;
+    }
+    .footer-card h3{
+        font-size: 12px;  
+    }
+    .footer-card p{  
+        font-size: 10px;
+    }
   }
-}
