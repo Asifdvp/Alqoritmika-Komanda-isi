@@ -1,52 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', Slab;
+    font-family: 'Roboto Slab', serif;
     box-sizing: border-box;
+    font-size: 16px;
 }
 body{
+    margin-top: 10em;
     background-color: teal;
+    height: 1500px;
 }
+/* Herseyin oldugu div */
 .all{
-width: 1440px;
+max-width: 1440px;
 height: 1046px;
 background: #FFFFFF;
 margin: 0 auto;
 }
-
+/* metn ve sekil olan main */
 main{
-width: 1192px;
+max-width:1192px;
 justify-content: space-between;
-height: 576px;
 margin: 0 auto;
+height: auto;
 display: flex;
 align-items: flex-end;
 }
-
+/* plerin yerlesdiyi article  */
 article h1{
-    width: 365px;
-    height: 93px;
     font-weight: bold;
     font-size: 55px;
     line-height: 101.38%;
+    margin-top: 1.6em;
+    margin-bottom: 1em;
 }
-p{
-    width: 662px;
-    height: 374px;
-    font-family: Roboto;
-    font-size: 24px;
-    line-height: 150%;
+article p{
+    max-width: 725px;
+    margin-top: 1em; 
+    font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 150%;
 }
-span{
-    display: block;
-    margin-top: 20px;
+.photo-div img{
+    max-width: 314px; 
+    max-height: 315px;
+   margin-right: 1.5em;
+   margin-bottom: 3em;
 }
+/* ellipsisi yerlesdirmek ucun */
+aside{
+    position: relative;
+}
+/* photo-div ellipsisi seklin altina getire bilmek ucun elave edilib */
+.photo-div{
+    z-index: 5;
+    position: relative;
+}
+.ellipsis{
+    position: absolute;
+    top:279px ;
+    right: 0;
+    width: 366px;
+    height: 59px;
+    border-radius: 50%;
+    background: #EFEFEF;
+}
+footer{
 
-img{
+  max-width: 1192px;
+    margin: 0 auto;
+   
+}
+.footer-all{
+    margin-top: 6em;
+    display: flex;  
+   align-items: center;
+   justify-content: space-between;
+   max-width: 1035px;
+}
+.footer-img img{
+    width: 232px;
+height: 203px;
+}
+.footer-content{
+    display: flex;
+    width: 664px;
+    justify-content: space-between;
+}
+.footer-card{
+    max-width: 159px;
+    font-style: normal;
+line-height: 130%;
+}
+.footer-card h3{
+font-size: 25px;
+font-weight: bold;
+}
+.footer-card p{  
+font-size: 18px;
+}
+/* Responsivlik tablet */
+@media  only screen and ( max-width:834px ) {
+  *{
+      font-size: 14px;
+  }
+  body{
+      background-color: red;
+  }
+    .all{
+        max-width: 834px;
+        height: 633px;
+    }
+    main{
+        max-width: 690px;   
+    }
+    article  h1{
+        font-size: 32px;
+    }
+    article p{
+        width: 383.41px;
 
-    width: 314px;
-    height: 315px;
+font-size: 14px;
+    }
+    .photo-div img{
+        width: 181.86px;
+height: 182.44px;
+    }
+    .ellipsis{
+        width: 211.98px;
+        height: 34.17px;
+        top:163px ;
+        
+    }
+
+/* Footer */
+footer{
+    max-width: 690px;     
+  }
+  .footer-all{
+      margin-top: 6em;
+      display: flex;  
+     align-items: center;
+     justify-content: start;
+     max-width: 1035px;
+  }
+  .footer-img img{
+  display: none;
+  }
+  .footer-content{
+      width: 385px;
+    
+    
+  }
+  .footer-card{
+      max-width: 97px;
+     
  
+  }
+  .footer-card h3{
+  font-size: 15px;
+  
+  }
+  .footer-card p{  
+    font-size: 11px;
+  }
 
+
+}
+@media  only screen and ( max-width:375px ){
+  body{
+      background-color: green;
+  }
 }
