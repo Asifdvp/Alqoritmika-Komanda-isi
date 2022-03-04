@@ -1,1 +1,1 @@
-# Alqoritmika-Komanda-isi
+# Figma vasitəsilə responsive dseign
